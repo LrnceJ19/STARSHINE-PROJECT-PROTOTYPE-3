@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Starshine Math Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/jpeg" href="image/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="starBox">
+      <i class="fa-solid fa-diamond star" id="s1"></i>
+      <i class="fa-solid fa-diamond star" id="s2"></i>
+      <i class="fa-solid fa-diamond star" id="s3"></i>
+      <i class="fa-solid fa-diamond star" id="s4"></i>
+      <i class="fa-solid fa-diamond star" id="s5"></i>
+      <i class="fa-solid fa-diamond star" id="s6"></i>
+      <i class="fa-solid fa-diamond star" id="s7"></i>
+      <i class="fa-solid fa-diamond star" id="s8"></i>
+      <i class="fa-solid fa-diamond star" id="s9"></i>
+      <i class="fa-solid fa-diamond star" id="s10"></i>
+      <i class="fa-solid fa-diamond star" id="s11"></i>
+      <i class="fa-solid fa-diamond star" id="s12"></i>
+      <i class="fa-solid fa-diamond star" id="s13"></i>
+      <i class="fa-solid fa-diamond star" id="s14"></i>
+      <i class="fa-solid fa-diamond star" id="s15"></i>
+      <i class="fa-solid fa-diamond star" id="s16"></i>
+    </div>
+    <div id="anchor">
+      <div id="mainMenu" class="mainContainer">
+        <h1 class="title">Starshine Math Quiz</h1>
+        <p class="subtitle">Starshine uses Math Quizzes to help your mind reach the stars, and make your brilliance shine like the brightest star.</p>
+        <div id="navContainer">
+          <div class="navWrapper" style="grid-area: play">
+            <div class="navBtn glass scale" id="playBtn">
+              <i class="fa-solid fa-circle-play navIcon"></i>
+              <h3 class="navTxt">PLAY</h3>
+            </div>
+          </div>
+          <div class="navWrapper" style="grid-area: stats">
+            <div class="navBtn glass scale">
+              <i class="fa-solid fa-chart-simple navIcon"></i>
+              <h3 class="navTxt">STATS</h3>
+            </div>
+          </div>
+          <div class="navWrapper" style="grid-area: creators">
+            <div class="navBtn glass scale">
+              <i class="fa-solid fa-screwdriver-wrench navIcon"></i>
+              <h3 class="navTxt">CREATORS</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="difficultyMenu" class="mainContainer">
+        <h1 class="title">SELECT DIFFICULTY</h1>
+        <div id=difficultySettings>
+          <div class="diffBtn glass scale" id="backBtn1" style="grid-area: return"><h3 id="backToMenu1"><i class="fa-solid fa-x"></i>RETURN</h3></div>
+          <div id="easyMode" class="diffBtn glass scale" style="grid-area: easy">
+            <div class="diffIcon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="diffTxt">EASY</h3></div>
+          <div id="mediumMode" class="diffBtn glass scale" style="grid-area: medium">
+            <div  class="diffIcon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="diffTxt">MEDIUM</h3></div>
+          <div id="hardMode" class="diffBtn glass scale" style="grid-area: hard">
+            <div class="diffIcon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="diffTxt">HARD</h3></div>
+        </div>
+      </div>
+      <div id="startingSignal">
+        <h1 id="signal"></h1>
+      </div>
+      <div id="gameUi" class="mainContainer">
+        <div id="gameStat" class="glass scale">
+          <h1 class="title" id="difficulty">DIFFICULTY</h1>
+          <div>
+            <div>
+              <i id="checkIcon" class="fa-solid fa-check"></i><h2 id="correctCount" class="statCount">0</h2>
+            </div>
+            <div>
+              <i id="wrongIcon" class="fa-solid fa-x"></i><h2 id="wrongCount" class="statCount">0</h2>
+            </div>
+            <div>
+              <i id="accuracyIcon" class="fa-solid fa-bullseye"></i><h2 id="accuracyCount" class="statCount">0%</h2>
+            </div>
+          </div>
+        </div>
+        <div id="questionContainer" class="glass scale">
+            <h1 id="question">2 + 2</h1>
+            <h3>Score: <span id="scoreCount">00000</span></h3>
+        </div>
+        <div id="timerContainer">
+          <i class="fa-solid fa-clock"></i><div></div><h2>15s</h2>
+        </div>
+        <div id="choicesContainer">
+          <div class="glass scale"><h1>2</h1></div>
+          <div class="glass scale"><h1>4</h1></div>
+          <div class="glass scale"><h1>8</h1></div>
+          <div class="glass scale"><h1>6</h1></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/082c91d8b7.js" crossorigin="anonymous"></script>
+  </body>
+</html>
